@@ -60,6 +60,7 @@
                 android:textColor="@color/text_color"
                 android:textCursorDrawable="@drawable/cursor" />
 
+
         </soup.neumorphism.NeumorphCardView>
 
         <soup.neumorphism.NeumorphCardView
@@ -68,6 +69,7 @@
             android:layout_height="80dp"
             android:layout_marginStart="20dp"
             android:layout_marginEnd="20dp"
+
             app:neumorph_shadowColorLight="@color/light_white"
             app:neumorph_shadowElevation="@dimen/cardview_default_elevation"
             app:neumorph_shadowColorDark="@color/black"
@@ -85,26 +87,42 @@
                 android:textColor="@color/text_color"
                 android:textCursorDrawable="@drawable/cursor" />
 
+
         </soup.neumorphism.NeumorphCardView>
 
+        <TextView
+            android:id="@+id/fieldChecker"
+            android:layout_marginTop="-5dp"
+            android:layout_marginStart="40dp"
+            android:layout_width="wrap_content"
+            android:fontFamily="sans-serif-medium"
+            android:layout_height="wrap_content"
+            android:text="Please enter all fields !"
+            android:textColor="#F44336"
+            android:visibility="gone"/>
+
         <soup.neumorphism.NeumorphButton
+            android:id="@+id/btn"
             style="@style/Widget.Neumorph.Button"
             android:layout_width="200dp"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:layout_marginTop="10dp"
+            app:neumorph_lightSource="leftTop"
             app:neumorph_shadowColorLight="@color/light_white"
             app:neumorph_shadowElevation="@dimen/cardview_default_elevation"
             app:neumorph_shadowColorDark="@color/black"
             android:text="SIGN IN"
             android:textColor="@color/text_color" />
         <TextView
+            android:id="@+id/forgotUP"
+            style=""
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:fontFamily="sans-serif-thin"
             android:layout_marginTop="-5dp"
             android:layout_gravity="center_horizontal"
-            android:text="Forgot username or password ?"/>
+            android:text="@string/forgot_username_or_password"/>
 
     </LinearLayout>
 
