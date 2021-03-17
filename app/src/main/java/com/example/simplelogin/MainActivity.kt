@@ -12,7 +12,7 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
 
         btn.setOnClickListener{
-            if (email.text.toString().isEmpty() && pass.text.toString().isEmpty()) {
+            if (email.text.toString().isEmpty() || pass.text.toString().isEmpty()) {
                     fieldChecker.visibility= View.VISIBLE
             }
             else {

@@ -15,7 +15,7 @@
         android:layout_marginStart="20dp"
         android:layout_marginTop="50dp"
         android:src="@drawable/avatar_boy" />
-
+z
     <LinearLayout
         android:id="@+id/layout_main"
         android:layout_width="match_parent"
@@ -75,7 +75,8 @@
             app:neumorph_shadowColorDark="@color/black"
             app:neumorph_shapeType="flat">
 
-            <EditText
+
+            <com.google.android.material.textfield.TextInputEditText
                 android:id="@+id/pass"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
